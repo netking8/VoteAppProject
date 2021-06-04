@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_CheckDet"
+        android:background="@drawable/gradient_main_dashboard"
+
+        app:title=" E-Vote Panel "/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                android:text="E Vote Panel"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="59dp"
+                    android:background="@drawable/ncp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+
+                <RadioButton
+                    android:id="@+id/rbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="SelectPres"
+                    android:text="@string/sharad_pawar"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="59dp"
+                    android:background="@drawable/inc"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/rbr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="SelectPres"
+                    android:text="RAHUL GANDHI"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="59dp"
+                    android:background="@drawable/bjp"
+                    android:layout_gravity="center"/>
+
+
+                <RadioButton
+                    android:id="@+id/rbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:onClick="SelectPres"
+                    android:text="NARENDRA MODI" />
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="59dp"
+                    android:background="@drawable/aap"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/rba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:onClick="SelectPres"
+                    android:text="ARVIND KEJRIVAL" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/resulttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="you selected :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/btnsubmit"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_vote"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

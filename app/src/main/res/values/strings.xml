@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Voting App</string>
+    <string name="application_name">MyVote</string>
+    <string name="thank_you">Thank You</string>
+    <string name="well_come">Well-Come</string>
+    <string name="sharad_pawar">SHARAD PAWAR</string>
+</resources>

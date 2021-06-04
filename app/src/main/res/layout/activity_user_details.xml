@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/gradient_main_dashboard"
+    tools:context=".User_DetailsActivity">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/toolbar_CheckDet"-->
+<!--        android:background="@drawable/gradient_main_dashboard"-->
+<!--        app:title="  Welcome To E-Vote"-->
+<!--        app:logo="@drawable/vote1"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/cutive_mono"
+                android:text="Check Details"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Name : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/profileFullName"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:hint="Your Name"
+                android:textColor="#0A0A0A"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tAadhaar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Aadhaar Number : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tAadharNumber"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:hint="Your Aadhaar Number"
+                android:textColor="#0A0A0A"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tvoterid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Voter ID : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvoterid"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:hint="Your Voter ID"
+                android:textColor="#0A0A0A"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Mobile Number : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tMobileNumber"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:hint="Your Mobile Number"
+                android:textColor="#0A0A0A"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="E-Mail Address : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tEmailAdd"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:hint="Your E-Mail Address"
+                android:textColor="#0A0A0A"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Date of Birth : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tDateofBirth"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:hint="Your Date Of Birth"
+                android:textColor="#0A0A0A"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Go to vote"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="31dp"
+                android:textSize="20dp"
+                android:onClick="go"
+                android:background="@drawable/button_login_dashboard"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btnGoTo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please Logout Your Session"
+                android:textColor="@color/colorRed"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="160dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

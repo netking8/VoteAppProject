@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CC0C5"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_CheckDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_main_dashboard"
+        app:logo="@drawable/vote1"
+        app:title="  Welcome To E-Vote" />
+
+    <ScrollView
+        android:id="@+id/scroll_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:text="Voters Registration"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="45dp"
+                    app:fontFamily="@font/aladin" />
+
+                <EditText
+                    android:id="@+id/enter_name"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your Full Name"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/enter_aadhar"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableStart="@drawable/ic_aadhaar_logo_svg"
+                    android:drawableLeft="@drawable/ic_aadhaar_logo_svg"
+                    android:drawablePadding="10dp"
+                    android:ems="12"
+                    android:hint="Enter Your Aadhaar Number"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/enter_overid"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableStart="@drawable/ic_voter_id"
+                    android:drawableLeft="@drawable/ic_voter_id"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Voter ID"
+
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/enter_contact"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/phone_black"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Enter Your Mobile Number"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:paddingLeft="8dp"
+                    android:textSize="20dp"/>
+
+
+
+                <EditText
+                    android:id="@+id/enter_email"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/email_black"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your E-Mail Address"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/enter_DOB"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/calender"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your Date Of Birth"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="40dp"
+                    android:text="Gender : "
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Male"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Female"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Other"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/button_submit"
+                    android:text="Submit"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="If Already Register ? "-->
+            <!--                    android:textColor="@color/colorRed"-->
+            <!--                    android:textSize="20dp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/login"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text=" || Login"-->
+            <!--                    android:textSize="20dp" />-->
+
+
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
